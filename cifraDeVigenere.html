@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cifras</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="cifraVigenere.css">
+	
+	
+</head>
+<body>
+	<h1>Cifra de Vigenère</h1>
+	<div id="geral">
+		
+		<div class="meio">
+			<form>
+				<label for="caixaTexto">Insira um texto para criptofrafar:</label>
+				<br>
+				<textarea class="texto" id="caixaTexto" type="text" name="" placeholder="seu texto aqui..."></textarea>
+						
+				<br>
+				<br>
+				<br>
+				
+				<label for="chave">Escreva algo para ser a chave:</label>
+				<br>
+				<input class="chave" id="chave" type="text" name="" placeholder="palavra secreta">	
+				<br>
+				<br>
+				<br>
+				
+			</form>
+				<button id="btn" onclick="verificaTextoCripta()">Go</button>
+			<br>
+			<br>
+			<div class="saida">
+				<p>Resultado, Texto Criptografado:</p>
+				<textarea class="texto" placeholder="saida em texto criptografado aqui..." id="s"></textarea>
+					
+				
+				
+			</div>
+			
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+		<div class="meio">
+			<form>
+				<label for="caixaTexto2">Insira um texto para Descriptofrafar:</label>
+				<br>
+				<textarea class="texto" id="caixaTexto2" type="text" name="" placeholder="seu texto aqui..."></textarea>
+				<br>
+				<br>
+				<br>
+				<label for="chave2">Escreva algo para ser a chave:</label>
+				<br>
+				<input class="chave" id="chave2" type="text" name="" placeholder="palavra secreta">
+				<br>
+				<br>
+				<br>	
+			</form>
+			
+			<button id="btn2" onclick="verificaTextoDescripta()">Go</button>
+			<br>
+			<br>
+			<div class="saida2">
+				<p>Resultado, Texto Descriptografado:</p>
+				<textarea class="texto" placeholder="saida em texto descriptografado aqui..." id="s2"></textarea>
+					
+				
+				
+			</div>
+		</div>
+			
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
+
