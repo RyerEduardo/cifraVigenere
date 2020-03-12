@@ -1,3 +1,3 @@
 <?php
-	require("src/main/resources/templates/cifraDeVigenere.html");
+	require("cifraDeVigenere.html");
 ?>
